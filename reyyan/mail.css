@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.mail-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sol taraf: Mail listesi */
+.mail-list {
+  width: 30%;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.mail-list h2 {
+  margin-top: 0;
+  color: #5A189A;
+  margin-bottom: 20px;
+}
+
+.mail-item {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.mail-item:hover {
+  background-color: #f0e5ff;
+}
+
+.mail-item.selected {
+  background-color: #e0c8ff;
+}
+
+/* Sağ taraf: Mail içeriği */
+.mail-content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.mail-content h2 {
+  margin-top: 0;
+  color: #5A189A;
+}
+
+.mail-content button {
+  background-color: #410052;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.mail-content button:hover {
+  background-color: #000000;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mail-container {
+    flex-direction: column;
+  }
+  
+  .mail-list {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}

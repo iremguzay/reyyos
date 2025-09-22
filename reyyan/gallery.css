@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #5A189A;
+  margin-bottom: 30px;
+}
+
+/* Masonry tarzı galeri */
+.gallery {
+  column-count: 4;          /* Kolon sayısı (responsive için JS ile değişebilir) */
+  column-gap: 15px;         /* Kolon arası boşluk */
+}
+
+.photo {
+  display: inline-block;    /* Masonry için inline-block olmalı */
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;             /* Her fotoğraf kendi oranını korur */
+  display: block;
+}
+
+.photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: #35063f;
+}
+
+button a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .gallery { column-count: 3; }
+}
+
+@media (max-width: 900px) {
+  .gallery { column-count: 2; }
+}
+
+@media (max-width: 600px) {
+  .gallery { column-count: 1; }
+}

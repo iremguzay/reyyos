@@ -1,0 +1,62 @@
+/* Sayfa ortalama */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  /* background-image: url('img/backg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+    background: linear-gradient(135deg, #2c0156, #9D4EDD);
+    color: white;
+
+}
+
+/* Kart kutusu */
+.card {
+  background-color: rgb(68, 11, 108);
+  
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+/* Resim */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Başlık */
+.card h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Buton */
+.card button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background-color: #35063f;
+}
+
+.card button a {
+    text-decoration: none;
+}
